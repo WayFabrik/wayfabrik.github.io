@@ -1,0 +1,86 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    background-color: black;
+    color: aliceblue;
+    overflow-x: hidden;
+    scrollbar-width: smooth;
+    text-align: center;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navigationbar a {
+    position: relative;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.navigationbar a:hover,
+.navigationbar a.on {
+    background: white;
+    color: black;
+}
+
+.navigationbar a.nav-ctg {
+    background: #4E90A0ed;
+    color: white;
+    padding: 10px 16px;
+}
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Style for menu icon */
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 1100;
+}
+
+.menu-icon i {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Default state: Show hamburger, hide close */
+.menu-icon .fa-bars {
+    display: block;
+}
+.menu-icon .fa-times {
+    display: none;
+}
