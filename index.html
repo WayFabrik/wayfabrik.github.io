@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayFabrik</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h2 class="logo">WayFabrik</h2>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+        <nav class="navigationbar">
+            <a class="on" href="#">Home</a>
+            <a id="toggleSelect" href="#devlog">Devlog</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#waiting-list" class="on nav-ctg">DOWNLOAD</a>
+        </nav>
+    </header>
+    
+
+    <div class="hero">
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <p class="hero-text">Navigate Smarter, Travel Faster!</p>
+                <p class="hero-smol-text">Find the best routes, avoid traffic, and reach your destination effortlessly with real-time AI-powered navigation.</p>
+                <div class="hero-buttons">
+                    <a href="#waiting-list" class="btn download-btn">Download Now</a>
+                    <a href="#learn" class="btn learn-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <img src="assets/mockup.png" alt="mockup" class="hero-image">
+    </div>
+
+
+    <section class="features" id="learn">
+        <h2>Key Features (What Makes Us Unique?)</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <img src="assets/smart-route.jpeg" alt="Smart Route Optimization">
+                <h3>🛣 Smart Route Optimization</h3>
+                <p>A* shortest routes to get you there faster.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/traffic.jpg" alt="Live Traffic Alerts">
+                <h3>🚦 Live Traffic Alerts</h3>
+                <p>Avoid congested areas with real-time updates.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/petrol.jpeg" alt="Nearby Facilities Finder">
+                <h3>⛽ Nearby Facilities Finder</h3>
+                <p>Find petrol pumps, charging stations, and more.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/reroutes.jpg" alt="Adaptive Route Adjustments">
+                <h3>🔄 Adaptive Route Adjustments</h3>
+                <p>Reroutes based on real-time conditions.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/Crowdsourcing.jpg" alt="Crowdsourced & Verified Data">
+                <h3>📍 Crowdsourced & Verified Data</h3>
+                <p>User-powered accuracy for the best experience.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <h1 class="how-works">HOW IT WORKS</h1>
+    <section class="roadmap how-works">
+        <div class="line"></div>
+        <div class="step">
+            <div class="step-icon"><img src="assets/waypoint.png" alt="waypoint"></div>
+            <div class="step-content">Enter Your Destination – Type or speak your location.</div>
+        </div>
+        <div class="step">
+            <div class="step-icon"><img src="assets/waypoint.png" alt="waypoint"></div>
+            <div class="step-content">Get Real-Time Routes – AI suggests the fastest, safest path.</div>
+        </div>
+        <div class="step">
+            <div class="step-icon"><img src="assets/waypoint.png" alt="waypoint"></div>
+            <div class="step-content">Live Updates – See traffic, road conditions, and nearby stops.</div>
+        </div>
+        <div class="step">
+            <div class="step-icon"><img src="assets/waypoint.png" alt="waypoint"></div>
+            <div class="step-content">Navigate & Optimize – Adaptive routing based on real-time data.</div>
+        </div>
+        <div class="step">
+            <div class="step-icon"><img src="assets/waypoint.png" alt="waypoint"></div>
+            <div class="step-content">Reach Destination Faster – Arrive efficiently with the best route.</div>
+        </div>
+
+    </section>
+
+    <section class="waiting-list" id="waiting-list">
+        <h2>Join the Waiting List</h2>
+        <p>Be the first to experience WayFabrik! Sign up now.</p>
+        <a href="https://forms.gle/Tk961MQbCHyvfYfj7" target="_blank" class="waiting-list-btn">Join Now</a>
+    </section>    
+    
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 WayFabrik. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.instagram.com/wayfabrik/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/wayfabrik" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
