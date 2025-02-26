@@ -1,0 +1,375 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    background-color: black;
+    color: aliceblue;
+    overflow-x: hidden;
+    scrollbar-width: smooth;
+    text-align: center;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navigationbar a {
+    position: relative;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.navigationbar a:hover,
+.navigationbar a.on {
+    background: white;
+    color: black;
+}
+
+.navigationbar a.nav-ctg {
+    background: #4E90A0ed;
+    color: white;
+    padding: 10px 16px;
+}
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Style for menu icon */
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 1100;
+}
+
+.menu-icon i {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Default state: Show hamburger, hide close */
+.menu-icon .fa-bars {
+    display: block;
+}
+.menu-icon .fa-times {
+    display: none;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    padding: 50px 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Left Side - Contact Info */
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.contact-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-box i {
+    font-size: 1.5em;
+    color: #4E90A0;
+}
+
+.contact-box h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.contact-box p,
+.contact-box a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+/* Right Side - Contact Form */
+.contact-form-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form-container h2 {
+    color: aliceblue;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    font-size: 1em;
+    transition: 0.3s ease;
+}
+
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    border-color: #4E90A0;
+    outline: none;
+}
+
+.contact-form-container textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Submit Button */
+.contact-form-container button {
+    background: #4E90A0;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form-container button:hover {
+    background: #2F6875;
+}
+/* General Hover Effects */
+.contact-box:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.contact-box i {
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-box:hover i {
+    color: #2F6875;
+}
+
+/* Input and Textarea Focus & Hover */
+.contact-form-container input,
+.contact-form-container textarea {
+    transition: 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-form-container input:hover,
+.contact-form-container textarea:hover {
+    border-color: #4E90A0;
+    box-shadow: 0 0 10px rgba(78, 144, 160, 0.5);
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    border-color: #4E90A0;
+    box-shadow: 0 0 15px rgba(78, 144, 160, 0.7);
+}
+
+/* Button Hover Effect */
+.contact-form-container button {
+    transition: 0.3s ease-in-out;
+}
+
+.contact-form-container button:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Instagram Link Hover */
+.contact-box a {
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-box a:hover {
+    color: #4E90A0;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: red;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: red;
+}
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 30px;
+    }
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-box {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 858px) {
+    .menu-icon {
+        display: block;
+    }
+
+    /* Change to '✖' when menu is open */
+    #menu-toggle:checked + .menu-icon .fa-bars {
+        display: none;
+    }
+    #menu-toggle:checked + .menu-icon .fa-times {
+        display: block;
+    }
+
+    .navigationbar {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        transition: height 0.4s ease-in-out;
+    }
+
+    .navigationbar a {
+        display: block;
+        padding: 15px;
+        width: 80%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 30px;
+    }
+    
+    .navigationbar a:last-child {
+        margin-bottom: 0;
+    }
+    /* Slide down effect */
+    #menu-toggle:checked ~ .navigationbar {
+        height: 250px;
+    }
+
+    #menu-toggle:checked ~ .navigationbar a {
+        opacity: 1;
+    }
+
+}
