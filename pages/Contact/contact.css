@@ -257,9 +257,56 @@ header {
     text-decoration: underline;
 }
 
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: red;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: red;
+}
+
+
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    header {
+        padding: 10px 30px;
+    }
     .contact-container {
         flex-direction: column;
         text-align: center;
@@ -274,3 +321,55 @@ header {
     }
 }
 
+
+@media (max-width: 858px) {
+    .menu-icon {
+        display: block;
+    }
+
+    /* Change to '✖' when menu is open */
+    #menu-toggle:checked + .menu-icon .fa-bars {
+        display: none;
+    }
+    #menu-toggle:checked + .menu-icon .fa-times {
+        display: block;
+    }
+
+    .navigationbar {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        transition: height 0.4s ease-in-out;
+    }
+
+    .navigationbar a {
+        display: block;
+        padding: 15px;
+        width: 80%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 30px;
+    }
+    
+    .navigationbar a:last-child {
+        margin-bottom: 0;
+    }
+    /* Slide down effect */
+    #menu-toggle:checked ~ .navigationbar {
+        height: 250px;
+    }
+
+    #menu-toggle:checked ~ .navigationbar a {
+        opacity: 1;
+    }
+
+}
