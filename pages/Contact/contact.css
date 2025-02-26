@@ -84,3 +84,193 @@ header {
 .menu-icon .fa-times {
     display: none;
 }
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    padding: 50px 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Left Side - Contact Info */
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.contact-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-box i {
+    font-size: 1.5em;
+    color: #4E90A0;
+}
+
+.contact-box h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.contact-box p,
+.contact-box a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+/* Right Side - Contact Form */
+.contact-form-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form-container h2 {
+    color: aliceblue;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    font-size: 1em;
+    transition: 0.3s ease;
+}
+
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    border-color: #4E90A0;
+    outline: none;
+}
+
+.contact-form-container textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Submit Button */
+.contact-form-container button {
+    background: #4E90A0;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form-container button:hover {
+    background: #2F6875;
+}
+/* General Hover Effects */
+.contact-box:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.contact-box i {
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-box:hover i {
+    color: #2F6875;
+}
+
+/* Input and Textarea Focus & Hover */
+.contact-form-container input,
+.contact-form-container textarea {
+    transition: 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-form-container input:hover,
+.contact-form-container textarea:hover {
+    border-color: #4E90A0;
+    box-shadow: 0 0 10px rgba(78, 144, 160, 0.5);
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    border-color: #4E90A0;
+    box-shadow: 0 0 15px rgba(78, 144, 160, 0.7);
+}
+
+/* Button Hover Effect */
+.contact-form-container button {
+    transition: 0.3s ease-in-out;
+}
+
+.contact-form-container button:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Instagram Link Hover */
+.contact-box a {
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-box a:hover {
+    color: #4E90A0;
+    text-decoration: underline;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-box {
+        justify-content: center;
+    }
+}
+
