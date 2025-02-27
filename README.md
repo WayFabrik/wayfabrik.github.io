@@ -9,7 +9,7 @@ Welcome to the official repository for **[WayFabrik](https://wayfabrik.github.io
 ## 🚀 Features
 
 - **Minimalist Navigation-inspired Design** with smooth waypoint animations.
-- **Blog Section** to share updates and insights.
+- **Devlog Section** to share updates and insights.
 - **Download Page** featuring a waiting list for early access.
 
 ## 📂 Project Structure
@@ -43,11 +43,11 @@ Welcome to the official repository for **[WayFabrik](https://wayfabrik.github.io
 ## 📢 Join the Waiting List
 
 Want to be notified when WayFabrik is ready? Join the waiting list:
-👉 [Google Form](#) *(Replace with actual link)*
+👉 [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSefjxm961I6ZYWr3w6SoxNRpeNme_fUUU-_s2NbldXolPyZVw/viewform)
 
 ## 📧 Contact
 
-For inquiries or feedback, visit our [Contact Page](https://wayfabrik.github.io/pages/contact) or reach out via Discord or email.
+For inquiries or feedback, visit our [Contact Page](https://wayfabrik.github.io/pages/contact/) or reach out via Discord or email.
 
 ---
-💡 *WayFabrik - Redefining Digital Exploration*
+💡 *WayFabrik - Your Personal Navigator*
