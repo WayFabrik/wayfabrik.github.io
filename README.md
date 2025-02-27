@@ -26,7 +26,7 @@ Welcome to the official repository for **[WayFabrik](https://wayfabrik.github.io
 │-- 📜 index.html     # Homepage
 │-- 📜 styles.css     # Main stylesheet
 │-- 📜 script.js      # JavaScript file
-│-- 📜 link.txt       # Additional references
+│-- 📜 link.txt       # temporary file
 │-- 📜 README.md      # This file
 ```
 
