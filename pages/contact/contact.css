@@ -90,8 +90,14 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: black;
+    /* background: black; */
     padding: 50px 20px;
+    
+    /* height: 100vh; */
+    background: linear-gradient(135deg, rgba(0,0,0,0.75), rgba(0,0,0,0.95)), url("../../assets/bg-map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contact-container {
