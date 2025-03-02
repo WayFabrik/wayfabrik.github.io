@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Waiting List</title>
+    <link rel="stylesheet" href="waiting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    
+    <header>
+        <h2 class="logo">WayFabrik</h2>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+        <nav class="navigationbar">
+            <a class="on" href="/">Home</a>
+            <a id="toggleSelect" href="../devlog/">Devlog</a>
+            <a href="../about/">About</a>
+            <a href="../contact/">Contact Us</a>
+            <a href="#" class="on nav-ctg">DOWNLOAD</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <h1>Join the Waiting List</h1>
+            <p>Be the first to access our latest features. Sign up now and stay updated!</p>
+        </div>
+        <div class="right">
+            <form id="join-form" action="https://docs.google.com/forms/d/e/1FAIpQLSefjxm961I6ZYWr3w6SoxNRpeNme_fUUU-_s2NbldXolPyZVw/formResponse" method="POST" target="hidden_iframe" onsubmit="showSuccessMessage()">
+                <input type="text" name="entry.2075143671" placeholder="First Name" required>
+                <input type="text" name="entry.778354991" placeholder="Last Name" required>
+                <input type="email" name="entry.1502471593" placeholder="Email" required>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="mailing-list" name="entry.85821689" value="yes" checked>
+                    <label for="mailing-list">By Clicking, you are agreeing to join our mailing list (No spam)</label>
+                </div>
+
+                <button type="submit" class="button">Join Now</button>
+            </form>
+
+            <div id="success-message" style="display: none; color: green; margin-top: 10px;">
+                Thank you! You have successfully joined.
+            </div>
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+        </div>
+    </div>
+
+    
+    <script>
+        document.getElementById("join-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            let form = this;
+            let formData = new FormData(form);
+
+            // Show success message immediately
+            document.getElementById('success-message').style.display = 'block';
+            form.reset();
+
+            setTimeout(() => {
+                document.getElementById('success-message').style.display = 'none';
+            }, 5000);
+
+            // Send form data in the background
+            fetch(form.action, {
+                method: "POST",
+                body: formData,
+                mode: "no-cors"
+            }).catch(error => console.error("Error submitting form:", error));
+        });
+    </script>
+</body>
+</html>

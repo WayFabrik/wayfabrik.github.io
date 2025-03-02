@@ -13,10 +13,8 @@ entry.251025024=9999-bugreport
 &
 entry.516112749=9999---+toototot
 
-
-
-
-https://docs.google.com/forms/d/e/1FAIpQLSefjxm961I6ZYWr3w6SoxNRpeNme_fUUU-_s2NbldXolPyZVw/
-
-entry.2075143671=uhb097543@0001010
+https://docs.google.com/forms/d/e/1FAIpQLSefjxm961I6ZYWr3w6SoxNRpeNme_fUUU-_s2NbldXolPyZVw/viewform?usp=pp_url&
+entry.2075143671=00008vghb&
+entry.778354991=0976drtghuj&
+entry.1502471593=009876@emainhh.gygu&
 entry.85821689=yes
